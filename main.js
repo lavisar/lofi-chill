@@ -309,7 +309,7 @@ var handleTimer = () => {
 				totalSecond = 0;
 				clearInterval(startCountDown);
 				var audio = new Audio(
-					"https://cdn.tainhacchuong24h.com/uploads/f15000/squid-game-alarm.mp3"
+					"https://cdn.tainhacchuong24h.com/uploads/f15000/báo-thức-mèo-kêu.mp3"
 				);
 				audio.play();
 				var newBtn = document.createElement("button");
