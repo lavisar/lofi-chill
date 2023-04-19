@@ -334,10 +334,6 @@ body {
 	overflow-y: auto;
 }
 .todos-show-item {
-	/* display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 20px; */
 	width: 100%;
 }
 .todo-job {
@@ -419,7 +415,6 @@ body {
 .timer-btn-container {
 	display: flex;
 	justify-content: center;
-	/* border: 1px solid #f3a952; */
 	gap: 10px;
 }
 .timer-control-btn {
@@ -460,35 +455,4 @@ body {
 }
 .new-btn i {
 	font-size: 20px;
-}
-.notice-btn {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 30px;
-	height: 30px;
-	border-top-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	outline: none;
-	background: none;
-	border: none;
-	color: #fff;
-	cursor: pointer;
-	transition: all 0.2s;
-}
-.notice-btn i {
-	font-size: 17px;
-}
-.notice:last-child {
-	top: 0px;
-	left: 30.5px;
-	transition: all 0.2s;
-	border-bottom-left-radius: 10px;
-	border-top-right-radius: 10px;
-}
-.notice-btn:hover {
-	background-color: red;
-}
-.notice-btn:hover + .notice {
-	opacity: 1;
 }

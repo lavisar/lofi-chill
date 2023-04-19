@@ -1,3 +1,4 @@
+// handle changing background
 var checkbox = document.querySelector(".input");
 var playButton = document.querySelector(".play-button");
 var weatherButton = document.querySelector(".weather-button");
@@ -25,7 +26,6 @@ checkbox.addEventListener("input", () => {
 		bg[1].classList.toggle("opa1");
 		bg[1].classList.toggle("opa0");
 	}
-	// if (checkbox.checked === true && )
 });
 var slider = document.querySelector(".slider");
 var sliderIcon = document.querySelector(".slider i");
@@ -63,6 +63,7 @@ weatherButton.addEventListener("click", () => {
 		bg[3].classList.toggle("opa0");
 	}
 });
+// handle music play
 var nextButton = document.querySelector(".next-button");
 var prevButton = document.querySelector(".prev-button");
 var musicChill = document.querySelector(".music-chill");
@@ -155,7 +156,7 @@ playButton.addEventListener("click", () => {
 		playIcon.setAttribute("src", "./images/play.svg");
 	}
 });
-/* todo App */
+// handle todo-list logic
 var todoListBtn = document.querySelector(".todo-btn");
 var todoInputBtn = document.querySelector(".todo-input-btn");
 todoListBtn.addEventListener("click", () => {
@@ -175,6 +176,15 @@ todoInputBtn.addEventListener("click", () => {
 		storageJobs = storageJobs;
 	}
 	var todoInput = document.querySelector("#todo-input");
+	if (todoInput.value.trim() === "") {
+		alert("Please enter a specific job!");
+		return;
+	}
+	var isDuplicate = storageJobs.includes(todoInput.value.trim());
+	if (isDuplicate) {
+		alert("Please do not enter a duplicate job!");
+		return;
+	}
 	var todoList = [...storageJobs, todoInput.value];
 	localStorage.setItem("todoList", JSON.stringify(todoList));
 	renderTodoList();
@@ -216,7 +226,7 @@ var renderTodoList = () => {
 };
 renderTodoList();
 
-/* Timer App */
+// handle timer logic
 var hourInput = document.querySelector("#hour-input");
 var minuteInput = document.querySelector("#minute-input");
 var secondInput = document.querySelector("#second-input");
