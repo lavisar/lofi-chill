@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Poppins&family=Shadows+Into+Light&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/gif"
+			href="./images/kitty.png"
+			sizes="100x100"
+		/>
+		<title>Lofi Chill For Study</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="music-type">
+					<button class="type-sleep mood-category">
+						<i class="fas fa-moon"></i
+						><span class="music-type-text">Sleep</span>
+					</button>
+					<button class="type-chill mood-category active">
+						<i class="fas fa-coffee"></i
+						><span class="music-type-text active">Chill</span>
+					</button>
+				</div>
+				<div class="view-setting">
+					<label class="switch">
+						<input class="input" type="checkbox" />
+						<span class="slider"><i class="fas fa-sun"></i></span>
+					</label>
+					<button class="weather-button">
+						<i class="fas fa-cloud-rain"></i>
+					</button>
+				</div>
+			</header>
+			<video
+				class="bg-video"
+				src="./videos/Day-rainny.mp4"
+				autoplay
+				loop
+				muted
+			></video>
+			<video
+				class="bg-video"
+				src="./videos/Night-rainny.mp4"
+				autoplay
+				loop
+				muted
+			></video>
+			<video
+				class="bg-video"
+				src="./videos/Night-clear.mp4"
+				autoplay
+				loop
+				muted
+			></video>
+			<video
+				class="bg-video"
+				src="./videos/Day-sunny.mp4"
+				autoplay
+				loop
+				muted
+			></video>
+			<audio class="music-chill" src="./audios/musics/chill1.mp3"></audio>
+			<audio
+				class="sound"
+				src="./audios/sounds/rain_city.mp3"
+				loop
+			></audio>
+			<div class="controls">
+				<button class="prev-button">
+					<img src="./images/prev.svg" alt="" />
+				</button>
+				<button class="play-button">
+					<img src="./images/play.svg" alt="" />
+				</button>
+				<button class="next-button">
+					<img src="./images/next.svg" alt="" />
+				</button>
+			</div>
+			<div class="focus-mode">
+				<div class="todo-wrapper">
+					<button class="focus-mode-btn todo-btn">
+						<i class="fas fa-clipboard-list"></i>
+					</button>
+					<div class="todo-container">
+						<div class="input-label">Your to do list</div>
+						<input
+							type="text"
+							class="todo-input"
+							id="todo-input"
+							placeholder="What are you going to do, today?"
+						/>
+						<button class="todo-input-btn">
+							<i class="fas fa-plus"></i>
+						</button>
+						<div class="todos-show"></div>
+					</div>
+				</div>
+				<div class="timer-wrapper">
+					<button class="focus-mode-btn timer-btn">
+						<i class="fas fa-hourglass-start"></i>
+					</button>
+					<div class="timer-container">
+						<div class="input-label">Focus mode</div>
+						<div class="input-container">
+							<div class="input-item">
+								<input
+									type="text"
+									class="timer-input hour-input"
+									id="hour-input"
+									value="0"
+								/><span>hours</span>
+							</div>
+							<div class="input-item">
+								<input
+									type="text"
+									class="timer-input minute-input"
+									id="minute-input"
+									value="0"
+								/><span>minutes</span>
+							</div>
+							<div class="input-item">
+								<input
+									type="text"
+									class="timer-input second-input"
+									id="second-input"
+									value="0"
+								/><span>seconds</span>
+							</div>
+						</div>
+						<div class="timer-btn-container">
+							<button
+								class="set-timer-btn timer-control-btn"
+								title="refresh"
+							>
+								<i class="fa-solid fa-arrows-rotate"></i>
+							</button>
+							<button
+								class="cancle-timer-btn timer-control-btn"
+								title="pause"
+							>
+								<i class="fas fa-pause"></i>
+							</button>
+							<button
+								class="pause-timer-btn timer-control-btn"
+								title="start"
+							>
+								<i class="fas fa-play"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>
