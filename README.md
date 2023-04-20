@@ -1,5 +1,6 @@
 # Music_App
-Music App is a website to help you relax and focus on your work in the best way. Built with HTML/CSS/JS and love
+* Music App is a website to help you relax and focus on your work in the best way. Built with HTML/CSS/JS and love
+* Live demo: https://lavisar.github.io/Music_App/
 ## Installation and Usage
 ### Requirements
 * Web browser
