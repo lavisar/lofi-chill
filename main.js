@@ -218,11 +218,11 @@ var renderTodoList = () => {
         <p class="todo-job todo-job-${index}">・ ${todo}
             <button class="delete-job-btn" onclick = "handleDeleteJob('${todo}')"><i class = "far fa-trash-alt"></i></button>
         </p>
-
         </div>
         `;
 	});
 	todoShow.innerHTML = htmls.join("");
+	
 };
 renderTodoList();
 
