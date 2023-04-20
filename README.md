@@ -20,5 +20,7 @@
 ![Screenshot 2023-04-20 200437](https://user-images.githubusercontent.com/67550867/233374860-e22b6bbd-f083-4e8e-ae7c-35f96a5f8205.png) 
 * You can use the `timer` with a self-selected time to help you work more optimally. <br /><br />
 ![Screenshot 2023-04-20 200516](https://user-images.githubusercontent.com/67550867/233375072-daea0f26-f839-4b42-822f-fc25f3017a66.png)
+## Techonology
+![My Skills](https://skillicons.dev/icons?i=html,css,js)
 ## Contributing
 If you want to contribute to this project, please fork the repository and create a pull request with your changes.
