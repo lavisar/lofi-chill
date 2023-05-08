@@ -24,3 +24,6 @@
 ![My Skills](https://skillicons.dev/icons?i=html,css,js)
 ## Contributing
 If you want to contribute to this project, please fork the repository and create a pull request with your changes.
+## Author
+👤 Sar Lavi 
+### 🤝 Thank you for reading 💖
